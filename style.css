@@ -160,43 +160,73 @@ footer {
     opacity: 0.7;
 }
 
+
 /* Media Queries for Responsiveness */
 
-/* For screens smaller than 768px  */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
+/* Small screens (up to 768px) */
+@media screen and (max-width: 768px) {
+  header {
+    padding: 10px 0;
+  }
 
-    .name {
-        margin-top: 10px;
-    }
+  .name {
+    font-size: 20px;
+  }
 
-    nav ul {
-        flex-direction: column;
-        margin-top: 10px;
-    }
+  nav li {
+    margin-right: 40px;
+  }
 
-    nav li {
-        margin: 10px 0;
-    }
+  .container {
+    flex-direction: column;
+    padding: 50px 20px;
+  }
 
-    main {
-        margin: 10px;
-        padding: 10px;
-    }
+  .content {
+    padding: 20px;
+    margin: 0;
+  }
 
-    .images {
-        flex-direction: column;
-    }
+  .text {
+    margin-left: 0;
+    text-align: center;
+  }
 
-    .picture {
-        margin: 10px 0;
-    }
+  .word2 {
+    font-size: 40px;
+  }
+
+  .word3 {
+    font-size: 24px;
+  }
+
+  .word4 {
+    padding: 20px;
+  }
 }
 
+/* Medium screens (769px to 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  nav li {
+    margin-right: 60px;
+  }
+
+  .container {
+    padding: 150px;
+  }
+
+}
+
+/* Larger screens (1025px and above) */
+@media screen and (min-width: 1025px) {
+  nav li {
+    margin-right: 90px;
+  }
+
+  .container {
+    padding: 200px;
+  }
+}
 
 
 
